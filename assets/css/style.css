@@ -1,8 +1,10 @@
+/* Fuente de la página */
 body{
     font-family: Cabin;
     color: white;
 }
 
+/* Banner del Hero Section de alpacas */
 #Hero-Section{
     background-image: url('../img/carousel1.jpg');
     background-repeat: no-repeat;
@@ -10,6 +12,7 @@ body{
     background-position: left;
 }
 
+/* Tipograía para el navbar y color del ícono hamburguesa */
 #barra-pagina{
     font-family: Lobster;
 }
@@ -19,10 +22,11 @@ body{
     opacity: 0.6;
  }
 
- li a{
+  li a{
     text-shadow: 1px 1px black;
  }
 
+ /* CSS para los párrafos de Quienes Somos, barra celeste con ícono en medio*/
  .iconitos{
     color: white;
     background-color:#10ccf4;

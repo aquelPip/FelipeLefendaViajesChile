@@ -17,6 +17,8 @@
     <script src="https://kit.fontawesome.com/f44fc9fc98.js" crossorigin="anonymous"></script>
 </head>
 <body>
+
+  <!-- Nav Bar con fondo transparente e ícono de hamburguesa negro -->
     <nav class="navbar fixed-top navbar-dark navbar-expand-lg py-0">
         <div class="container-fluid me-4">
           <a class="navbar-brand ms-lg-5 ps-lg-5 ms-4 ps-0" href="#"> <img src="./assets/img/viajes.svg" alt="" style="width: 1em;"> <p style="display:inline;text-shadow: 2px 1px black;" id="barra-pagina">Viajes Chile</p></a>
@@ -27,7 +29,7 @@
             
             <ul class="navbar-nav ms-auto pe-5 me-5">
               <li class="nav-item">
-                <a class="nav-link text-white" aria-current="page" href="#Hero-Section">Inicio</a>
+                <a class="nav-link text-white" aria-current="page" href="#Hero-Section">Inicio</a> <!-- hrefs hacia los ids de cada sección para smooth scroll -->
               </li>
               <li class="nav-item">
                 <a class="nav-link text-white" href="#Quienessomos">Quienes Somos</a>
@@ -50,16 +52,19 @@
         </div>
       </nav>
 
+<!-- Tag header para la imagen de cover en la sección -->
   <header id="Hero-Section" class="text-light">
     <div class="container">
       
       <div class="ms-auto col-12 col-md-7" style="height:50vh;">
-        <p><br></p>
+        <p><br></p> <!-- Salto de línea con un p, ya que sin esto la imagen del cover no rellena todo el espacio, no sé por qué, pero me funciona así-->
 
         
       </div>
     </div>
   </header>
+
+
 
   <div style="background-color:black;">
 
@@ -67,6 +72,7 @@
       <h3 style="text-align:center;color: white;" id="Quienessomos">¿QUIÉNES SOMOS?</h3>
     </div>
 
+    <!-- párrafos de la sección, se utilizó Lorem Ipsum con largo de 50 palabras a falta de maqueta -->
     <div class="row py-5 mb-5">
       <div class="col-4 px-5">
         <i class="fa-solid fa-plane fa-xl iconitos"></i>
@@ -89,16 +95,18 @@
 
     </div>
   </div>
-    
+
+<!-- CDN a jquery utilizado en la página-->
 <script
         src="https://code.jquery.com/jquery-3.6.0.js"
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
         crossorigin="anonymous">
 </script>
 
+<!-- Archivo script.js propio a utilizar para métodos requeridos -->
 <script src="./assets/js/script.js"></script>
 
-
+<!-- CDN bootstrap -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
