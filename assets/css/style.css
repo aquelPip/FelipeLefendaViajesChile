@@ -11,7 +11,7 @@ body{
 }
 
 .navbar .navbar-toggler{
-    background-color: black !important;
+    background-color: teal !important;
     opacity: 0.6;
  }
 
@@ -28,7 +28,6 @@ body{
     text-align: center;
     line-height: inherit !important;
     vertical-align: center;
-
  }
 
  /* Estilos para cards*/
@@ -41,12 +40,54 @@ body{
     text-align: center;
  }
 
+ .card-img-top {
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+}
+
  /* Estilo de botón */
 
  .btn{
     background-color: #10ccf4;
     color: white;
  }
+
+ /* CSS para íconos del footer */
+.wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+}
+
+/* Colores de link en footer para que no modifiquen el blanco del logo*/
+
+a:link {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: white;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+  a:active {
+    color: white;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+
+ 
 
  /* Media Queries para tamaño de fuente en las cartas según tamaño de pantalla*/
  @media (min-width:0px){

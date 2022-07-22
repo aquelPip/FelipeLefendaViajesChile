@@ -8,7 +8,7 @@
     <meta name="author" content="Felipe Lefenda">
     <meta name="description" content="Examen ViajesChile">
     <meta name="keywords" content="Examen final curso fundamentos del diseño web">
-        <!-- Fuentes a utilizar -->
+    <!-- Fuentes a utilizar -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&family=Lobster&display=swap" rel="stylesheet">
@@ -22,11 +22,11 @@
 <body>
   
   <!-- Wrapper que oculta overflows, sin esto aparece un margen blanco a la derecha que no sabía como sacar, 
-    por lo que agregué este wrapper-->
+  por lo que agregué este wrapper-->
 <div style="overflow-x:hidden; position:relative">
 
 
-  <!-- Nav Bar con fondo transparente e ícono de hamburguesa negro -->
+  <!-- Nav Bar con fondo transparente y cambio de color a ícono de hamburguesa -->
     <nav class="navbar fixed-top navbar-dark navbar-expand-lg py-0">
         <div class="container-fluid">
           <a class="navbar-brand ms-lg-5 ps-lg-5 ms-4 ps-0" href="#"> <img src="./assets/img/viajes.svg" alt="" style="width: 1em;"> <p style="display:inline;text-shadow: 2px 1px black;" id="barra-pagina">Viajes Chile</p></a>
@@ -115,12 +115,52 @@
   </div>
 
   <!-- Sección destacados-->
-  <div class="">
+  <div>
+
 
     <div class="pt-4 mx-5 border-bottom">
       <h3 style="text-align:center;color: white;" id="Destacados">DESTACADOS</h3>
     </div>
 
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 px-5 pt-4">
+      <div class="col">
+        <div class="card h-100">
+          <img src="./assets/img/card1.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Lorem ipsum dolor sit.</h5>
+            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur laborum, pariatur quia iste iure aperiam, earum commodi deserunt inventore expedita nostrum voluptatem laudantium, ipsum fuga impedit deleniti odio voluptas in.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="./assets/img/card2.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Lorem ipsum dolor sit.</h5>
+            <p class="card-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto delectus, reprehenderit ea qui explicabo soluta maxime atque dolore, molestiae magnam laborum dicta rerum ab vitae optio aperiam quisquam incidunt quis harum praesentium. Incidunt quibusdam ipsa labore culpa earum nobis quo.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="./assets/img/card3.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Lorem ipsum dolor sit.</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae dolorem, vero voluptates libero expedita debitis perspiciatis laborum, dolore voluptatem excepturi nisi laudantium aliquid distinctio alias.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="./assets/img/card4.jpg" class="card-img-top" style="height:100 ;" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis eius repellat harum. Mollitia architecto sunt cum excepturi porro saepe minima ea beatae fuga incidunt repellat velit, aliquam pariatur dolorem, ullam, distinctio libero deleniti impedit labore voluptates magnam. Ipsa, delectus? Labore quasi quo nobis iusto expedita?</p>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- 
     <div class="row pt-5 mx-5">
 
     <div class="col-3">
@@ -163,7 +203,7 @@
       </div>
     </div>
 
-    </div>
+    </div>-->
    
   </div>
 
@@ -195,13 +235,30 @@
       <button class="btn btn-outline-secondary" type="button" id="enviarContacto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Presiona para enviar tu mensaje">Enviar</button>
     </div>
     
-
-
-
-
-
-
   </div>
+
+  <footer style="background-color:#10ccf4;">
+    <div class="row">
+
+      <div class="py-4 col-6">
+        <div class="wrapper">        
+          <h3 style="text-align:center;color: white;font-family: Cabin;">VIAJES CHILE</h3>
+        </div>
+      </div>
+
+      <div class="py-4 col-6">
+        <div class="wrapper d-flex gap-3">
+          <a href="https://github.com/aquelPip"><i class="fa-brands fa-2xl fa-github-square"></i></a>
+          <a href="https://www.linkedin.com/in/falefenda/"><i class="fa-brands fa-2xl fa-linkedin"></i></a>
+          <a href="https://twitter.com/"><i class="fa-brands fa-2xl fa-twitter-square"></i></a>
+          <a href="https://www.facebook.com/"><i class="fa-brands fa-2xl fa-facebook-square"></i></a>
+        </div>
+      </div>
+
+
+    </div>
+
+  </footer>
 
 
 </div> <!-- fin del wrapper que cubre el overflow mencionado al principio, usado para todo el body-->
