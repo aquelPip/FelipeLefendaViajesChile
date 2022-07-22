@@ -5,7 +5,7 @@ body{
     background-color: black;
 }
 
-/* Tipograía para el navbar y color del ícono hamburguesa y sombras der letras para verse mejor con fondo carousel1*/
+/* Tipograía para el navbar y color del ícono hamburguesa y sombras de letras para verse mejor con fondo carousel1*/
 #barra-pagina{
     font-family: Lobster;
 }
@@ -40,9 +40,9 @@ body{
     text-align: center;
  }
 
- .card-img-top {
+ .card-img-top { /* Para hacer que todas las imagenes sean del mismo tamaño, ya que card2 es más alta que las otras*/
     width: 100%;
-    height: 15vw;
+    height: 15vw; 
     object-fit: cover;
 }
 
