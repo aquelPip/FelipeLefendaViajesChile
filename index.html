@@ -8,19 +8,27 @@
     <meta name="author" content="Felipe Lefenda">
     <meta name="description" content="Examen ViajesChile">
     <meta name="keywords" content="Examen final curso fundamentos del diseño web">
+        <!-- Fuentes a utilizar -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&family=Lobster&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- Versión 5.2 de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"> 
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="icon" type="image/x-icon" href="./assets/img/viajes.svg">
+    <!-- CDN a Font Awesome para íconos-->
     <script src="https://kit.fontawesome.com/f44fc9fc98.js" crossorigin="anonymous"></script>
 </head>
 <body>
+  
+  <!-- Wrapper que oculta overflows, sin esto aparece un margen blanco a la derecha que no sabía como sacar, 
+    por lo que agregué este wrapper-->
+<div style="overflow-x:hidden; position:relative">
+
 
   <!-- Nav Bar con fondo transparente e ícono de hamburguesa negro -->
     <nav class="navbar fixed-top navbar-dark navbar-expand-lg py-0">
-        <div class="container-fluid me-4">
+        <div class="container-fluid">
           <a class="navbar-brand ms-lg-5 ps-lg-5 ms-4 ps-0" href="#"> <img src="./assets/img/viajes.svg" alt="" style="width: 1em;"> <p style="display:inline;text-shadow: 2px 1px black;" id="barra-pagina">Viajes Chile</p></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -36,11 +44,11 @@
               </li>
 
               <li class="nav-item">
-                <a class="nav-link text-white" href="#">Destacados</a>
+                <a class="nav-link text-white" href="#Destacados">Destacados</a>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link text-white" href="#">Contacto</a>
+                <a class="nav-link text-white" href="#Contacto">Contacto</a>
               </li>
 
             </ul>
@@ -54,40 +62,50 @@
 
 <!-- Tag header para la imagen de cover en la sección -->
   <header id="Hero-Section" class="text-light">
-    <div class="container">
-      
-      <div class="ms-auto col-12 col-md-7" style="height:50vh;">
-        <p><br></p> <!-- Salto de línea con un p, ya que sin esto la imagen del cover no rellena todo el espacio, no sé por qué, pero me funciona así-->
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
 
-        
+          <div class="carousel-item active" data-bs-interval="6000"> <!-- interval 6000 para rotación cada 6 segundos-->
+            <img src="./assets/img/carousel1.jpg" class="d-block w-100" alt="...">
+          </div>
+
+          <div class="carousel-item" data-bs-interval="6000">
+            <img src="./assets/img/carousel2.jpg" class="d-block w-100" alt="...">
+          </div>
+
+          <div class="carousel-item" data-bs-interval="6000">
+            <img src="./assets/img/carousel3.jpg" class="d-block w-100" alt="...">
+          </div>    
+       
       </div>
     </div>
+
+
   </header>
 
+  <!-- Comienzo de quienes somos, con fondo negro -->
+  <div class="d-none d-md-block">
 
-
-  <div style="background-color:black;">
-
-    <div class="pt-5">
+    <div class="pt-4 mx-5 border-bottom ">
       <h3 style="text-align:center;color: white;" id="Quienessomos">¿QUIÉNES SOMOS?</h3>
     </div>
 
     <!-- párrafos de la sección, se utilizó Lorem Ipsum con largo de 50 palabras a falta de maqueta -->
-    <div class="row py-5 mb-5">
-      <div class="col-4 px-5">
+    <div class="row py-5">
+      <div class="col px-5">
         <i class="fa-solid fa-plane fa-xl iconitos"></i>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis eveniet vero corporis, quisquam, commodi voluptas debitis ipsa consequuntur, optio incidunt rerum possimus quibusdam praesentium? Nisi iusto numquam maiores quas laudantium nemo dolor id! At aut totam non. Non error iusto maiores at earum mollitia ipsum consequatur harum. Aperiam, fugiat facilis!</p>
 
       </div>
 
-      <div class="col-4 pe-5">
+      <div class="col pe-5">
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis at blanditiis in corrupti praesentium vero sequi repellat voluptas quibusdam quisquam eum aut aspernatur modi eius doloribus ex earum optio laudantium, quam expedita dolorem beatae ducimus cupiditate deserunt? Saepe, expedita ex? Molestias veritatis magni ad quia numquam, eaque illum tempora vero.
         </p>
         <i class="fa-solid fa-mountain fa-xl iconitos"></i>
 
       </div>
 
-      <div class="col-4 pe-5">
+      <div class="col pe-5">
         <i class="fa-solid fa-route fa-xl iconitos"></i>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem facilis possimus harum fugit porro commodi quos reiciendis et dolorem voluptatem, incidunt aut eligendi itaque recusandae velit, omnis officiis sapiente laborum perspiciatis sunt dolore natus eaque? Provident perferendis culpa molestias libero.</p>
 
@@ -96,7 +114,98 @@
     </div>
   </div>
 
-<!-- CDN a jquery utilizado en la página-->
+  <!-- Sección destacados-->
+  <div class="">
+
+    <div class="pt-4 mx-5 border-bottom">
+      <h3 style="text-align:center;color: white;" id="Destacados">DESTACADOS</h3>
+    </div>
+
+    <div class="row pt-5 mx-5">
+
+    <div class="col-3">
+      <div class="card border" style="width: 20vw;">
+        <img src="./assets/img/card1.jpg" class="card-img-top" style="height: 22vh;" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Lorem ipsum dolor sit.</h5>
+          <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt doloribus perspiciatis et ab architecto repudiandae consectetur nam laudantium voluptate placeat.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-3">
+      <div class="card border" style="width: 20vw;">
+        <img src="./assets/img/card2.jpg" class="card-img-top" style="height: 22vh;" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Lorem ipsum dolor sit.</h5>
+          <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt doloribus perspiciatis et ab architecto repudiandae consectetur nam laudantium voluptate placeat.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-3">
+      <div class="card border" style="width: 20vw;">
+        <img src="./assets/img/card3.jpg" class="card-img-top" style="height: 22vh;" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Lorem ipsum dolor sit.</h5>
+          <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt doloribus perspiciatis et ab architecto repudiandae consectetur nam laudantium voluptate placeat.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-3">
+      <div class="card border" style="width: 20vw;">
+        <img src="./assets/img/card4.jpg" class="card-img-top" style="height: 22vh;" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Lorem ipsum dolor sit.</h5>
+          <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt doloribus perspiciatis et ab architecto repudiandae consectetur nam laudantium voluptate placeat.</p>
+        </div>
+      </div>
+    </div>
+
+    </div>
+   
+  </div>
+
+  <div class="pt-4">
+    <div class="pt-4 mx-5 border-bottom">
+      <h3 style="text-align:center;color: white;" id="Contacto">CONTACTO</h3>
+    </div>
+
+    <div class="my-3 mx-5">
+      <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Nombre Apellido">
+    </div>
+
+    <div class="my-3 mx-5">
+      <label for="exampleFormControlInput1" class="form-label">Correo</label>
+      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@correo.com">
+    </div>
+
+    <div class="my-3 mx-5">
+      <label for="exampleFormControlInput1" class="form-label">Asunto</label>
+      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Razón de contacto">
+    </div>
+
+    <div class="my-3 mx-5">
+      <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
+    </div>
+    <div class="my-3 mx-5">
+      <button class="btn btn-outline-secondary" type="button" id="enviarContacto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Presiona para enviar tu mensaje">Enviar</button>
+    </div>
+    
+
+
+
+
+
+
+  </div>
+
+
+</div> <!-- fin del wrapper que cubre el overflow mencionado al principio, usado para todo el body-->
+<!-- CDN a jquery versión 3.6.0 utilizado en la página-->
 <script
         src="https://code.jquery.com/jquery-3.6.0.js"
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
@@ -106,7 +215,7 @@
 <!-- Archivo script.js propio a utilizar para métodos requeridos -->
 <script src="./assets/js/script.js"></script>
 
-<!-- CDN bootstrap -->
+<!-- CDN bootstrap 5.2 con packages JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>

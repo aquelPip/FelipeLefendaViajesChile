@@ -2,17 +2,10 @@
 body{
     font-family: Cabin;
     color: white;
+    background-color: black;
 }
 
-/* Banner del Hero Section de alpacas */
-#Hero-Section{
-    background-image: url('../img/carousel1.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: left;
-}
-
-/* Tipograía para el navbar y color del ícono hamburguesa */
+/* Tipograía para el navbar y color del ícono hamburguesa y sombras der letras para verse mejor con fondo carousel1*/
 #barra-pagina{
     font-family: Lobster;
 }
@@ -37,3 +30,41 @@ body{
     vertical-align: center;
 
  }
+
+ /* Estilos para cards*/
+
+ .card-body{
+    background-color: #10ccf4 !important;
+ }
+
+ .card-title{
+    text-align: center;
+ }
+
+ /* Estilo de botón */
+
+ .btn{
+    background-color: #10ccf4;
+    color: white;
+ }
+
+ /* Media Queries para tamaño de fuente en las cartas según tamaño de pantalla*/
+ @media (min-width:0px){
+    .card-title{font-family: "Cabin"; font-weight: 700;font-size:12px;}
+    .card-text{font-family: "Cabin"; font-weight: 400;font-size:8px;}
+}
+
+@media (min-width: 576px){
+    .card-title{font-family: "Cabin"; font-weight: 700;font-size:14px;}
+    .card-text{font-family: "Cabin"; font-weight: 400;font-size:10px;}
+}
+
+@media (min-width: 768px){
+    .card-title{font-family: "Cabin"; font-weight: 700;font-size:18px;}
+    .card-text{font-family: "Cabin"; font-weight: 400;font-size:14px;}
+}
+
+@media (min-width: 992px){
+    .card-title{font-family: "Cabin"; font-weight: 700;font-size:24px;}
+    .card-text{font-family: "Cabin"; font-weight: 400;font-size:16px;}
+}
